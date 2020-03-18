@@ -41,14 +41,14 @@
             <TableColumn fx:id="tcNamnBehörighet4" prefWidth="395.0" text="Behörighet 4" />
          </columns>
       </TableView>
-      <Button layoutX="437.0" layoutY="747.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Lägg till" />
+      <Button layoutX="437.0" layoutY="747.0" mnemonicParsing="false" onAction="#btn_laggTillPersonalBehörighet3" prefHeight="27.0" prefWidth="76.0" text="Lägg till" />
       <TextField fx:id="txfKortnummer" layoutX="37.0" layoutY="748.0" prefHeight="27.0" prefWidth="283.0" promptText="Kortnummer" />
-      <Button layoutX="436.0" layoutY="372.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Lägg till" />
-      <Button layoutX="881.0" layoutY="372.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Lägg till" />
-      <Button layoutX="880.0" layoutY="748.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Lägg till" />
-      <Button layoutX="532.0" layoutY="372.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Ta bort" />
-      <Button layoutX="533.0" layoutY="747.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Ta bort" />
-      <Button layoutX="977.0" layoutY="372.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Ta bort" />
-      <Button layoutX="976.0" layoutY="748.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Ta bort" />
+      <Button layoutX="436.0" layoutY="372.0" mnemonicParsing="false" onAction="#btn_laggTillPersonalBehörighet1" prefHeight="27.0" prefWidth="76.0" text="Lägg till" />
+      <Button layoutX="881.0" layoutY="372.0" mnemonicParsing="false" onAction="#btn_laggTillPersonalBehörighet2" prefHeight="27.0" prefWidth="76.0" text="Lägg till" />
+      <Button layoutX="880.0" layoutY="748.0" mnemonicParsing="false" onAction="#btn_laggTillPersonalBehörighet4" prefHeight="27.0" prefWidth="76.0" text="Lägg till" />
+      <Button layoutX="532.0" layoutY="372.0" mnemonicParsing="false" onAction="#btn_taBortPersonalBehörighet1" prefHeight="27.0" prefWidth="76.0" text="Ta bort" />
+      <Button layoutX="533.0" layoutY="747.0" mnemonicParsing="false" onAction="#btn_taBortPersonalBehörighet3" prefHeight="27.0" prefWidth="76.0" text="Ta bort" />
+      <Button layoutX="977.0" layoutY="372.0" mnemonicParsing="false" onAction="#btn_taBortPersonalBehörighet2" prefHeight="27.0" prefWidth="76.0" text="Ta bort" />
+      <Button layoutX="976.0" layoutY="748.0" mnemonicParsing="false" onAction="#btn_taBortPersonalBehörighet4" prefHeight="27.0" prefWidth="76.0" text="Ta bort" />
    </children>
 </AnchorPane>

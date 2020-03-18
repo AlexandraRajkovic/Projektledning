@@ -1,25 +1,19 @@
 package classes;
 
-import java.util.*;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Behörighet {
 
-	private Behörighetsregister behörighetsregister;
-	private ArrayList<Personal> personal = new ArrayList<Personal>();
+	private ObservableList<Personal> personal = FXCollections.observableArrayList();
 
 	
 	//GETTERS AND SETTERS
-	public ArrayList<Personal> getPersonal() {
+	public ObservableList<Personal> getPersonal() {
 		return personal;
 	}
-	public void setPersonal(ArrayList<Personal> personal) {
+	public void setPersonal(ObservableList<Personal> personal) {
 		this.personal = personal;
-	}
-	public Behörighetsregister getBehörighetsregister() {
-		return behörighetsregister;
-	}
-	public void setBehörighetsregister(Behörighetsregister behörighetsregister) {
-		this.behörighetsregister = behörighetsregister;
 	}
 	
 	//METODER
