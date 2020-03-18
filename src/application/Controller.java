@@ -88,14 +88,14 @@ public class Controller {
 		txfKortnummer.clear();
 		tvPersonal.setItems(personalReg.getObservablePersonalLista());
 	}
-	
+
 	@FXML
 	public void btn_taBortPersonal(ActionEvent event) {
 		Personal tmpPersonal = tvPersonal.getSelectionModel().getSelectedItem();
 		personalReg.removePersonal(tmpPersonal);
-		
+
 	}
-	
+
 	@FXML
 	public void btn_hittaPersonal(ActionEvent event) {
 		Personal tmpPersonal = tvPersonal.getSelectionModel().getSelectedItem();
@@ -106,5 +106,5 @@ public class Controller {
 		txfInstitution.setText(tmpPersonal.getInstitution());
 		txfKortnummer.setText(tmpPersonal.getKortnummer());
 	}
-	
+
 }
