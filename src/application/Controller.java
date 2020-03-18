@@ -51,6 +51,20 @@ public class Controller {
 	private TableView<Personal> tvBehörighet4;
 	@FXML 
 	private TableColumn<Personal, String> tcNamnBehörighet4;
+	
+	public Controller() {
+		Personal Alexandra = new Personal("Alexandra Rajkovic", "000708XXXX", "0700000000", "allexandra.rajkovic@gmail.com", "Informatik", "123456");
+		Personal Robert = new Personal("Robert Buzuk", "000709XXXX", "0701000000", "robglominte@gmail.com", "Informatik", "098765");
+		Personal Belma = new Personal("Belma Basimamovic", "000416XXXX", "0700000000", "Belmabelma@live.se", "Informatik", "135790");
+		Personal Ogi = new Personal("Ognjen Radic", "990729XXXX", "0700000000", "ognjenradic99@gmail.com", "Informatik", "246810");
+		
+		personalReg.addPersonal(Ogi);
+		personalReg.addPersonal(Belma);
+		personalReg.addPersonal(Robert);
+		personalReg.addPersonal(Alexandra);
+		
+		tvPersonal.setItems(personalReg.getPersonalLista());
+	}
 
 	@FXML
 	public void btn_laggTillPersonal(ActionEvent event) {
