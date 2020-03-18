@@ -70,7 +70,7 @@ public class Controller {
 	private TableColumn<Personal, String> tcNamnBehörighet4;
 
 	@FXML
-	public void laggTillPersonal(ActionEvent event) {
+	public void btn_laggTillPersonal(ActionEvent event) {
 		String personalNamn = txfNamn.getText();
 		String personalPersonnummer = txfPersonnummer.getText();
 		String personalTelefonnummer = txfTelefonnummer.getText();
@@ -87,14 +87,24 @@ public class Controller {
 		txfInstitution.clear();
 		txfKortnummer.clear();
 		tvPersonal.setItems(personalReg.getObservablePersonalLista());
-		
-		
 	}
 	
 	@FXML
-	public void taBortPersonal(ActionEvent event) {
+	public void btn_taBortPersonal(ActionEvent event) {
 		Personal tmpPersonal = tvPersonal.getSelectionModel().getSelectedItem();
 		personalReg.removePersonal(tmpPersonal);
 		
 	}
+	
+	@FXML
+	public void btn_hittaPersonal(ActionEvent event) {
+		Personal tmpPersonal = tvPersonal.getSelectionModel().getSelectedItem();
+		txfNamn.setText(tmpPersonal.getNamn());
+		txfPersonnummer.setText(tmpPersonal.getPersonnummer());
+		txfTelefonnummer.setText(tmpPersonal.getTelefonnummer());
+		txfEmail.setText(tmpPersonal.getEmail());
+		txfInstitution.setText(tmpPersonal.getInstitution());
+		txfKortnummer.setText(tmpPersonal.getKortnummer());
+	}
+	
 }
