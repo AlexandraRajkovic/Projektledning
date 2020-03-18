@@ -86,7 +86,7 @@ public class Controller {
 		
 		try {
 			tvPersonal.setItems(personalReg.getPersonalLista());
-			tcNamn.setCellValueFactory(new PropertyValueFactory<>("Personal"));
+			tcNamn.setCellValueFactory(new PropertyValueFactory<Personal, String>("namn"));
 		} catch (Exception e) {
 			//...
 		}
@@ -117,4 +117,43 @@ public class Controller {
 		txfKortnummer.setText(tmpPersonal.getKortnummer());
 	}
 
+	@FXML
+	public void btn_laggTillPersonalBehörighet1(ActionEvent event) {
+		
+	}
+	
+	@FXML
+	public void btn_taBortPersonalBehörighet1(ActionEvent event) {
+		
+	}
+	
+	@FXML
+	public void btn_laggTillPersonalBehörighet2(ActionEvent event) {
+		
+	}
+	
+	@FXML
+	public void btn_taBortPersonalBehörighet2(ActionEvent event) {
+		
+	}
+	
+	@FXML
+	public void btn_laggTillPersonalBehörighet3(ActionEvent event) {
+		
+	}
+	
+	@FXML
+	public void btn_taBortPersonalBehörighet3(ActionEvent event) {
+		
+	}
+	
+	@FXML
+	public void btn_laggTillPersonalBehörighet4(ActionEvent event) {
+		
+	}
+	
+	@FXML
+	public void btn_taBortPersonalBehörighet4(ActionEvent event) {
+		
+	}
 }
