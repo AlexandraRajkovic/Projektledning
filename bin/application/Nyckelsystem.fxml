@@ -13,9 +13,9 @@
           <TableColumn prefWidth="282.0" text="Personal" />
         </columns>
       </TableView>
-      <Button layoutX="37.0" layoutY="529.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Lägg till" />
-      <Button layoutX="243.0" layoutY="529.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="76.0" text="Ta bort" />
-      <Button layoutX="134.0" layoutY="529.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="88.0" text="Hitta" />
+      <Button layoutX="37.0" layoutY="529.0" mnemonicParsing="false" onAction="#btn_laggTillPersonal" prefHeight="27.0" prefWidth="76.0" text="Lägg till" />
+      <Button layoutX="243.0" layoutY="529.0" mnemonicParsing="false" onAction="#btn_taBortPersonal" prefHeight="27.0" prefWidth="76.0" text="Ta bort" />
+      <Button layoutX="134.0" layoutY="529.0" mnemonicParsing="false" onAction="#btn_hittaPersonal" prefHeight="27.0" prefWidth="88.0" text="Hitta" />
       <TextField fx:id="txfNamn" layoutX="37.0" layoutY="571.0" prefHeight="27.0" prefWidth="283.0" promptText="Namn" />
       <TextField fx:id="txfPersonnummer" layoutX="37.0" layoutY="606.0" prefHeight="27.0" prefWidth="283.0" promptText="Personnummer (ÅÅMMDD-XXXX)" />
       <TextField fx:id="txfTelefonnummer" layoutX="37.0" layoutY="642.0" prefHeight="27.0" prefWidth="283.0" promptText="Telefonnummer" />

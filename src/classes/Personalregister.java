@@ -7,21 +7,20 @@ public class Personalregister {
 	private ObservableList<Personal> personalLista = FXCollections.observableArrayList();
 	
 	
-	public ObservableList<Personal> getObservablePersonalLista() {
+	public ObservableList<Personal> getPersonalLista() {
 		return personalLista;
 	}
-	public void setObservablePersonalLista(ObservableList<Personal> personalLista) {
+	public void setPersonalLista(ObservableList<Personal> personalLista) {
 		this.personalLista = personalLista;
 	}
 	
 	//Metoder
 	public void addPersonal(Personal personal) {
-		this.personalLista.add(personal);
+		personalLista.add(personal);
 	}
-	public Personal removePersonal(Personal personal) {
-		this.personalLista.remove(personal);
+	public void removePersonal(Personal personal) {
+		personalLista.remove(personal);
 		System.out.println(personal.getNamn() + " togs bort ur personalregistret.");
-		return personal;
 	}
 	
 

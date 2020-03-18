@@ -31,10 +31,7 @@ import classes.Personalregister;
 
 public class Controller {
 
-	private Behörighetsregister behörighetsReg = new Behörighetsregister();
 	private Personalregister personalReg = new Personalregister();
-	private Personal personal = null;	
-	private Behörighet behörighet = null;
 
 	@FXML 
 	private TextField txfNamn;
@@ -86,14 +83,27 @@ public class Controller {
 		txfEmail.clear();
 		txfInstitution.clear();
 		txfKortnummer.clear();
-		tvPersonal.setItems(personalReg.getObservablePersonalLista());
+		
+		try {
+			tvPersonal.setItems(personalReg.getPersonalLista());
+			tcNamn.setCellValueFactory(new PropertyValueFactory<>("Personal"));
+		} catch (Exception e) {
+			//...
+		}
+		
+
 	}
 
 	@FXML
 	public void btn_taBortPersonal(ActionEvent event) {
 		Personal tmpPersonal = tvPersonal.getSelectionModel().getSelectedItem();
 		personalReg.removePersonal(tmpPersonal);
-
+		txfNamn.clear();
+		txfPersonnummer.clear();
+		txfTelefonnummer.clear();
+		txfEmail.clear();
+		txfInstitution.clear();
+		txfKortnummer.clear();
 	}
 
 	@FXML
